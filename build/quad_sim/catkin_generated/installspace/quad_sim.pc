@@ -1,0 +1,8 @@
+prefix=/home/pat/quad_sim/install
+
+Name: quad_sim
+Description: Description of quad_sim
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
