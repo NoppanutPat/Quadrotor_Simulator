@@ -178,8 +178,8 @@ void GazeboRosForce::UpdateChild()
   ignition::math::Vector3d velo3(0,0,this->rotorvelo.data[2]);
   ignition::math::Vector3d velo4(0,0,this->rotorvelo.data[3]);
 
-  ignition::math::Vector3d liftforce1(0,0,-1*this->liftforce.data[0]);
-  ignition::math::Vector3d liftforce2(0,0,-1*this->liftforce.data[1]);
+  ignition::math::Vector3d liftforce1(0,0,this->liftforce.data[0]);
+  ignition::math::Vector3d liftforce2(0,0,this->liftforce.data[1]);
   ignition::math::Vector3d liftforce3(0,0,this->liftforce.data[2]);
   ignition::math::Vector3d liftforce4(0,0,this->liftforce.data[3]);
 
