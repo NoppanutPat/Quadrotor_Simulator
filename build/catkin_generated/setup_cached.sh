@@ -7,8 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/pat/quad_sim/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/pat/quad_sim/devel/lib:$LD_LIBRARY_PATH"
 export PWD='/home/pat/quad_sim/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/pat/quad_sim/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/pat/quad_sim/src:$ROS_PACKAGE_PATH"
