@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pat/quad_sim/src
+CMAKE_SOURCE_DIR = /home/nptttn/Quadrotor_Simulator/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pat/quad_sim/build
+CMAKE_BINARY_DIR = /home/nptttn/Quadrotor_Simulator/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pat/quad_sim/build/CMakeFiles /home/pat/quad_sim/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nptttn/Quadrotor_Simulator/build/CMakeFiles /home/nptttn/Quadrotor_Simulator/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pat/quad_sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nptttn/Quadrotor_Simulator/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

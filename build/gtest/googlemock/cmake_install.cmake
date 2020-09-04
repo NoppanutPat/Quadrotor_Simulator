@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pat/quad_sim/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nptttn/Quadrotor_Simulator/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/pat/quad_sim/build/gtest/googlemock/gtest/cmake_install.cmake")
+  include("/home/nptttn/Quadrotor_Simulator/build/gtest/googlemock/gtest/cmake_install.cmake")
 
 endif()
 

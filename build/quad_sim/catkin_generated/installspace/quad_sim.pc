@@ -1,4 +1,4 @@
-prefix=/home/pat/quad_sim/install
+prefix=/home/nptttn/Quadrotor_Simulator/install
 
 Name: quad_sim
 Description: Description of quad_sim

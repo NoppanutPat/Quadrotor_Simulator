@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <math.h>
 
-#include </home/pat/quad_sim/src/quad_sim/include/quad_sim/gazebo_ros_force.h>
+#include </home/nptttn/Quadrotor_Simulator/src/quad_sim/include/quad_sim/gazebo_ros_force.h>
 
 namespace gazebo 
 {
@@ -168,7 +168,7 @@ void GazeboRosForce::UpdateObjectForce(const std_msgs::Float64MultiArray::ConstP
       force = -5.38E-03-(0.0478*throttle->data[i])+(8.93E-04*throttle->data[i]*throttle->data[i])-(-2.34E-06*throttle->data[i]*throttle->data[i]*throttle->data[i]);
     }
 
-    ROS_FATAL_NAMED("force","force : %lf , velo : %lf\n",force,velo);
+    // ROS_FATAL_NAMED("force","force : %lf , velo : %lf\n",force,velo);
 
     tempvelo.push_back(velo);
     templiftforce.push_back(force);

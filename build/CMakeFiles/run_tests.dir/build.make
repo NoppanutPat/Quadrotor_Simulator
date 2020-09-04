@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pat/quad_sim/src
+CMAKE_SOURCE_DIR = /home/nptttn/Quadrotor_Simulator/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pat/quad_sim/build
+CMAKE_BINARY_DIR = /home/nptttn/Quadrotor_Simulator/build
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/pat/quad_sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pat/quad_sim/src /home/pat/quad_sim/src /home/pat/quad_sim/build /home/pat/quad_sim/build /home/pat/quad_sim/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nptttn/Quadrotor_Simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nptttn/Quadrotor_Simulator/src /home/nptttn/Quadrotor_Simulator/src /home/nptttn/Quadrotor_Simulator/build /home/nptttn/Quadrotor_Simulator/build /home/nptttn/Quadrotor_Simulator/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 
