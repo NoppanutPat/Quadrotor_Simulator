@@ -129,7 +129,7 @@
         <parent link="frame" />
         <child link="propeller1" />
         <axis xyz="0 1 0" />
-        <dynamics damping="0.00" friction="0.00"/>
+        <dynamics damping="0.0004" friction="0.00"/>
     </joint>
 
     <propeller_link name="propeller2" />
@@ -139,7 +139,7 @@
         <parent link="frame" />
         <child link="propeller2" />
         <axis xyz="0 1 0" />
-        <dynamics damping="0.00" friction="0.00"/>
+        <dynamics damping="0.0004" friction="0.00"/>
     </joint>
 
     <propeller_link name="propeller3" />
@@ -149,7 +149,7 @@
         <parent link="frame" />
         <child link="propeller3" />
         <axis xyz="0 1 0" />
-        <dynamics damping="0.00" friction="0.00"/>
+        <dynamics damping="0.0004" friction="0.00"/>
     </joint>
 
     <propeller_link name="propeller4" />
@@ -159,7 +159,7 @@
         <parent link="frame" />
         <child link="propeller4" />
         <axis xyz="0 1 0" />
-        <dynamics damping="0.00" friction="0.00"/>
+        <dynamics damping="0.0004" friction="0.00"/>
     </joint>
     
     <gazebo>

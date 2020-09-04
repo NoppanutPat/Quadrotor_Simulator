@@ -157,9 +157,19 @@ void GazeboRosForce::UpdateObjectForce(const std_msgs::Float64MultiArray::ConstP
   
   std::vector<double> tempvelo;
   std::vector<double> templiftforce;
+  double velo,force;
   for(int i=0;i<4;i++){
-    double velo = -0.75+47.3*(throttle->data[i])+(-0.281*(throttle->data[i]*throttle->data[i]))+(9.97E-04*(throttle->data[i]*throttle->data[i]*throttle->data[i]));
-    double force = -5.38E-03+(0.0478*throttle->data[i])+(8.93E-04*throttle->data[i]*throttle->data[i])+(-2.34E-06*throttle->data[i]*throttle->data[i]*throttle->data[i]);
+    if (throttle->data[i] >= 0){
+      velo = -0.75+47.3*(throttle->data[i])+(-0.281*(throttle->data[i]*throttle->data[i]))+(9.97E-04*(throttle->data[i]*throttle->data[i]*throttle->data[i]));
+      force = -5.38E-03+(0.0478*throttle->data[i])+(8.93E-04*throttle->data[i]*throttle->data[i])+(-2.34E-06*throttle->data[i]*throttle->data[i]*throttle->data[i]);
+    }
+    else{
+      velo = -1*(-0.75-47.3*(throttle->data[i])+(-0.281*(throttle->data[i]*throttle->data[i]))-(9.97E-04*(throttle->data[i]*throttle->data[i]*throttle->data[i])));
+      force = -5.38E-03-(0.0478*throttle->data[i])+(8.93E-04*throttle->data[i]*throttle->data[i])-(-2.34E-06*throttle->data[i]*throttle->data[i]*throttle->data[i]);
+    }
+
+    ROS_FATAL_NAMED("force","force : %lf , velo : %lf\n",force,velo);
+
     tempvelo.push_back(velo);
     templiftforce.push_back(force);
   }
@@ -178,15 +188,16 @@ void GazeboRosForce::UpdateChild()
   ignition::math::Vector3d velo3(0,0,this->rotorvelo.data[2]);
   ignition::math::Vector3d velo4(0,0,this->rotorvelo.data[3]);
 
-  ignition::math::Vector3d liftforce1(0,0,this->liftforce.data[0]);
-  ignition::math::Vector3d liftforce2(0,0,this->liftforce.data[1]);
-  ignition::math::Vector3d liftforce3(0,0,this->liftforce.data[2]);
-  ignition::math::Vector3d liftforce4(0,0,this->liftforce.data[3]);
+  ignition::math::Vector3d liftforce1(0,this->liftforce.data[0],0);
+  ignition::math::Vector3d liftforce2(0,this->liftforce.data[1],0);
+  ignition::math::Vector3d liftforce3(0,this->liftforce.data[2],0);
+  ignition::math::Vector3d liftforce4(0,this->liftforce.data[3],0);
 
   // this->link_->AddRelativeForce(force);
   // // this->link_->AddForceAtRelativePosition(force,ignition::math::Vector3d(0,0,0));
   // // this->link_->AddForceAtWorldPosition(this->link_->GetWorldPose().rot.RotateVector(Vector3d(fixed(0), fixed(1), fixed(2))), body_->GetWorldCoGPose().pos);
   // this->link_->AddRelativeTorque(torque);
+
   this->link1_->SetAngularVel(velo1);
   this->link2_->SetAngularVel(velo2);
   this->link3_->SetAngularVel(velo3);
