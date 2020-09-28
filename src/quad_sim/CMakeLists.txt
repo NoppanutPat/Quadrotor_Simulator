@@ -152,6 +152,9 @@ include_directories(
 add_library(quad_liftforce_plugins src/quad_liftforce_plugins.cpp)
 target_link_libraries(quad_liftforce_plugins ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 
+add_library(quad_liftforce_plugins_demo src/quad_liftforce_plugins_demo.cpp)
+target_link_libraries(quad_liftforce_plugins_demo ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure

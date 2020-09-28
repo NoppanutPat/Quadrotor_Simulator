@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/nptttn/Quadrotor_Simulator/build/CMakeFiles/CMakeTmp
+Change Dir: /home/nptttn/senior_project/quad_sim/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_eb503/fast"
-/usr/bin/make -f CMakeFiles/cmTC_eb503.dir/build.make CMakeFiles/cmTC_eb503.dir/build
-make[1]: Entering directory '/home/nptttn/Quadrotor_Simulator/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_eb503.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_eb503.dir/CheckSymbolExists.c.o   -c /home/nptttn/Quadrotor_Simulator/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_eb503
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb503.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_eb503.dir/CheckSymbolExists.c.o  -o cmTC_eb503 
-CMakeFiles/cmTC_eb503.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_e949c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e949c.dir/build.make CMakeFiles/cmTC_e949c.dir/build
+make[1]: Entering directory '/home/nptttn/senior_project/quad_sim/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e949c.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e949c.dir/CheckSymbolExists.c.o   -c /home/nptttn/senior_project/quad_sim/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e949c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e949c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e949c.dir/CheckSymbolExists.c.o  -o cmTC_e949c 
+CMakeFiles/cmTC_e949c.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_eb503.dir/build.make:97: recipe for target 'cmTC_eb503' failed
-make[1]: *** [cmTC_eb503] Error 1
-make[1]: Leaving directory '/home/nptttn/Quadrotor_Simulator/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_eb503/fast' failed
-make: *** [cmTC_eb503/fast] Error 2
+CMakeFiles/cmTC_e949c.dir/build.make:97: recipe for target 'cmTC_e949c' failed
+make[1]: *** [cmTC_e949c] Error 1
+make[1]: Leaving directory '/home/nptttn/senior_project/quad_sim/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e949c/fast' failed
+make: *** [cmTC_e949c/fast] Error 2
 
-File /home/nptttn/Quadrotor_Simulator/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/nptttn/senior_project/quad_sim/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/nptttn/Quadrotor_Simulator/build/CMakeFiles/CMakeTmp
+Change Dir: /home/nptttn/senior_project/quad_sim/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_658e1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_658e1.dir/build.make CMakeFiles/cmTC_658e1.dir/build
-make[1]: Entering directory '/home/nptttn/Quadrotor_Simulator/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_658e1.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_658e1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_658e1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_658e1.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_658e1.dir/CheckFunctionExists.c.o  -o cmTC_658e1 -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_ba86b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ba86b.dir/build.make CMakeFiles/cmTC_ba86b.dir/build
+make[1]: Entering directory '/home/nptttn/senior_project/quad_sim/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ba86b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ba86b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ba86b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba86b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ba86b.dir/CheckFunctionExists.c.o  -o cmTC_ba86b -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_658e1.dir/build.make:97: recipe for target 'cmTC_658e1' failed
-make[1]: *** [cmTC_658e1] Error 1
-make[1]: Leaving directory '/home/nptttn/Quadrotor_Simulator/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_658e1/fast' failed
-make: *** [cmTC_658e1/fast] Error 2
+CMakeFiles/cmTC_ba86b.dir/build.make:97: recipe for target 'cmTC_ba86b' failed
+make[1]: *** [cmTC_ba86b] Error 1
+make[1]: Leaving directory '/home/nptttn/senior_project/quad_sim/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ba86b/fast' failed
+make: *** [cmTC_ba86b/fast] Error 2
 
 

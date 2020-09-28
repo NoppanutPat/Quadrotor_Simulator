@@ -1,4 +1,4 @@
-prefix=/home/nptttn/Quadrotor_Simulator/devel
+prefix=/home/nptttn/senior_project/quad_sim/devel
 
 Name: quad_sim
 Description: Description of quad_sim

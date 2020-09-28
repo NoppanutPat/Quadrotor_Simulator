@@ -30,7 +30,7 @@ gazebo/common/Plugin.hh
 gazebo/common/Events.hh
 -
 
-/home/nptttn/Quadrotor_Simulator/src/quad_sim/src/quad_liftforce_plugins.cpp
+/home/nptttn/senior_project/quad_sim/src/quad_sim/src/quad_liftforce_plugins.cpp
 algorithm
 -
 assert.h

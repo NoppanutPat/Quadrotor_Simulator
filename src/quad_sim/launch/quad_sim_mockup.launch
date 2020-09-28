@@ -1,0 +1,22 @@
+<launch>
+
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+  </include>
+
+  <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher" output="screen" ></node> 
+
+  <node name="sdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-file /home/nptttn/senior_project/quad_sim/src/quad_sim/models/quad_demo/quad_sim.sdf -sdf -model quad"/> 
+  <node name="sdf_spawner1" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-file /home/nptttn/senior_project/quad_sim/src/quad_sim/models/quad_demo/target.sdf -sdf -z 2 -model target"/> 
+
+</launch>

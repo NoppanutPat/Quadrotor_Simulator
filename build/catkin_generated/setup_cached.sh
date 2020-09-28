@@ -7,6 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/home/nptttn/bangpanroyyim/devel/lib:/home/nptttn/catkin_ws/devel/lib:/opt/ros/melodic/lib'
-export PKG_CONFIG_PATH='/home/nptttn/bangpanroyyim/devel/lib/pkgconfig:/home/nptttn/catkin_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig'
-export PWD='/home/nptttn/Quadrotor_Simulator/build'
+export PWD='/home/nptttn/senior_project/quad_sim/build'

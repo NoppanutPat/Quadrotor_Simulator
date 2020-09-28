@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nptttn/Quadrotor_Simulator/src
+CMAKE_SOURCE_DIR = /home/nptttn/senior_project/quad_sim/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nptttn/Quadrotor_Simulator/build
+CMAKE_BINARY_DIR = /home/nptttn/senior_project/quad_sim/build
 
 # Utility rule file for std_srvs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ quad_sim/CMakeFiles/std_srvs_generate_messages_lisp.dir/build: std_srvs_generate
 .PHONY : quad_sim/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
 
 quad_sim/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean:
-	cd /home/nptttn/Quadrotor_Simulator/build/quad_sim && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/nptttn/senior_project/quad_sim/build/quad_sim && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : quad_sim/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
 
 quad_sim/CMakeFiles/std_srvs_generate_messages_lisp.dir/depend:
-	cd /home/nptttn/Quadrotor_Simulator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nptttn/Quadrotor_Simulator/src /home/nptttn/Quadrotor_Simulator/src/quad_sim /home/nptttn/Quadrotor_Simulator/build /home/nptttn/Quadrotor_Simulator/build/quad_sim /home/nptttn/Quadrotor_Simulator/build/quad_sim/CMakeFiles/std_srvs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nptttn/senior_project/quad_sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nptttn/senior_project/quad_sim/src /home/nptttn/senior_project/quad_sim/src/quad_sim /home/nptttn/senior_project/quad_sim/build /home/nptttn/senior_project/quad_sim/build/quad_sim /home/nptttn/senior_project/quad_sim/build/quad_sim/CMakeFiles/std_srvs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quad_sim/CMakeFiles/std_srvs_generate_messages_lisp.dir/depend
 
